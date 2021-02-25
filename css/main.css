@@ -134,7 +134,7 @@ header a img {
 }
 
 .intropage {
-  padding-top: 4em;
+  padding-top: 5em;
   background-color: #f60b33;
 }
 
@@ -190,6 +190,7 @@ header a img {
 
 .socialheaderlink {
   background: #cf0124;
+  margin: 2em 0;
 }
 
 .socialheaderlink .socialgripview {
@@ -290,7 +291,14 @@ section .sectiondesc {
 
 .combacksection p {
   line-height: 1.5;
-  color: lightcyan;
+  color: #ffe6da;
+}
+
+.combacksection button {
+  padding: 1em 2em;
+  border: none;
+  background: yellow;
+  text-transform: uppercase;
 }
 
 .teamcard {
@@ -328,13 +336,122 @@ section .sectiondesc {
   color: honeydew;
 }
 
-.contactsection .contactnumber {
+.contactsection .contactintro {
+  text-align: center;
+  line-height: 1.5;
+  color: #ffc1c1;
+  padding: 0 2em;
+}
+
+.contactsection .contactdata {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding-top: 4em;
+  color: #ffc1c1;
+}
+
+.contactsection .contactdata .contactnumber {
+  text-align: center;
+}
+
+.contactsection .foottercontactbtn {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.contactsection .foottercontactbtn .buttoncoll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactsection .foottercontactbtn .buttoncoll button {
+  margin: 0.2rem;
+  padding: 1em 1.2em;
+  border: none;
+  background: #cf0124;
+  -webkit-box-shadow: 1px 4px 6px 1px #ad0421;
+          box-shadow: 1px 4px 6px 1px #ad0421;
+  color: #f1d8ff;
 }
 
 /* media queries */
+@media only screen and (min-width: 768px) {
+  #menu-bar {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: unset;
+    position: relative;
+    padding: unset;
+    left: 0;
+    top: 0;
+  }
+  header nav ul a {
+    display: block;
+    padding: 0 1em;
+  }
+  .intropage .companytitledesc {
+    padding: 2em 4em;
+  }
+  .aboutkampany {
+    padding: 5em 2em;
+  }
+  .aboutkampany .aboutcompany {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
+    padding: 3em;
+  }
+  .productsection .productlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
+    padding: 3em;
+  }
+  .productsection .productlisting .productcard {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .productsection .productlisting .productcard img {
+    width: 50px;
+    height: 60px;
+  }
+  .combacksection {
+    text-align: center;
+  }
+  .meettheteam .teamlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
+    padding: 4em 2em;
+  }
+  section {
+    padding: 4em 0;
+  }
+  section .sectiondesc {
+    padding: 2em;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   #menu-bar {
     display: none;
@@ -355,6 +472,144 @@ section .sectiondesc {
   header nav ul a {
     display: block;
     padding: 0 1em;
+  }
+  .intropage h1 {
+    font-size: 3.5rem;
+  }
+  .intropage .companytitledesc {
+    padding: 2em 4em;
+  }
+  .intropage h5 {
+    font-size: 2rem;
+  }
+  .intropage .homebuttton .actionbutton button {
+    padding: 1em 2.5em;
+  }
+  .aboutkampany {
+    padding: 5em 2em;
+  }
+  .aboutkampany .aboutcompany {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 4em;
+    padding: 3em 4em;
+  }
+  .productsection .productlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 3em;
+    padding: 3em 5em;
+  }
+  .productsection .productlisting .productcard {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .productsection .productlisting .productcard img {
+    width: 50px;
+    height: 60px;
+  }
+  .combacksection {
+    text-align: center;
+  }
+  .meettheteam .teamlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 4em;
+    padding: 0 4em;
+  }
+  section {
+    padding: 4em 0;
+  }
+  section .sectiondesc {
+    padding: 2em 4em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .intropage h1 {
+    font-size: 3.5rem;
+  }
+  .intropage p {
+    font-size: unset;
+    margin: 0 7em;
+  }
+  .intropage .companytitledesc {
+    padding: 2em 4em;
+  }
+  .intropage h5 {
+    font-size: 2rem;
+  }
+  .intropage .homebuttton .actionbutton button {
+    padding: 1em 2.5em;
+  }
+  .aboutkampany {
+    margin: 0 7em;
+  }
+  .aboutkampany .aboutcompany {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 4em;
+    padding: 3em 4em;
+  }
+  .productsection {
+    margin: 0 7em;
+  }
+  .productsection .productlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 3em;
+    padding: 3em 5em;
+  }
+  .productsection .productlisting .productcard {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .productsection .productlisting .productcard img {
+    width: 50px;
+    height: 60px;
+  }
+  .combacksection {
+    text-align: center;
+    margin: 0 7em;
+  }
+  .meettheteam {
+    margin: 0 7em;
+  }
+  .meettheteam .teamlisting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 4em;
+    padding: 0 4em;
+  }
+  section .sectiontitle {
+    font-size: 2.8rem;
+  }
+  section .sectiondesc {
+    padding: 2em 4em;
+  }
+  .buttoncoll {
+    padding: 2em;
+  }
+  .buttoncoll button {
+    padding: 1.2em 3em !important;
+    width: 100% !important;
+  }
+  .socialgripview ul li {
+    font-size: 18px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
