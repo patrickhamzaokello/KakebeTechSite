@@ -141,7 +141,9 @@ header a img {
 .intropage h1 {
   color: whitesmoke;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 0 0.5em;
+  overflow-wrap: break-word;
 }
 
 .intropage p {
@@ -149,12 +151,14 @@ header a img {
   text-align: center;
   font-size: 0.9rem;
   line-height: 1.5;
+  padding: 0 1em;
 }
 
 .intropage h5 {
   text-align: center;
   color: white;
   font-size: 1.5rem;
+  padding: 0 1em;
 }
 
 .intropage .homebuttton {
@@ -173,7 +177,7 @@ header a img {
 }
 
 .intropage .homebuttton .actionbutton button {
-  padding: 1em 2.5rem;
+  padding: 1em 1.5rem;
   display: inline-block;
   margin: 1em;
   border: none;
@@ -206,7 +210,128 @@ header a img {
 
 .socialheaderlink .socialgripview ul li {
   margin: 0.5rem;
-  font-size: 14px;
+  font-size: 10px;
+}
+
+section {
+  padding: 4em 1em;
+}
+
+section .sectiontitle {
+  color: #2c2b2b;
+  text-align: center;
+}
+
+section .sectiondesc {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.aboutcompany {
+  padding: 2em 0;
+}
+
+.aboutcompany .card {
+  text-align: center;
+}
+
+.aboutcompany .card .cardtitle {
+  color: #333;
+  font-size: 18px;
+}
+
+.aboutcompany .card .carddesc {
+  line-height: 1.5;
+  color: gray;
+}
+
+.productsection {
+  padding: 4em 0;
+}
+
+.productsection .productcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productsection .productcard img {
+  width: 60px;
+  margin: 0.8em;
+}
+
+.productsection .productcard .productdetails .productitle {
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.productsection .productcard .productdetails .productdesc {
+  color: #333;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.combacksection {
+  background: #f60b33;
+}
+
+.combacksection .comeback {
+  color: whitesmoke;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.combacksection p {
+  line-height: 1.5;
+  color: lightcyan;
+}
+
+.teamcard {
+  padding: 2em 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.teamcard img {
+  width: 190px;
+  margin: 0 auto;
+}
+
+.teamcard .teaminfo {
+  text-align: center;
+}
+
+.teamcard .teaminfo .teamtitle {
+  color: #333;
+}
+
+.teamcard .teaminfo .teamdesc {
+  color: #666;
+  line-height: 1.5;
+}
+
+.contactsection {
+  padding: 4em 0;
+  background: #cf0124;
+}
+
+.contactsection h1 {
+  text-align: center;
+  color: honeydew;
+}
+
+.contactsection .contactnumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* media queries */
