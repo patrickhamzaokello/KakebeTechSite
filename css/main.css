@@ -207,6 +207,10 @@ header a img {
   background: yellow;
 }
 
+.intropage .homebuttton .actionbutton .contactbtn {
+  background: white;
+}
+
 .socialheaderlink {
   background: #cf0124;
   margin-top: 1em;
