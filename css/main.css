@@ -30,7 +30,7 @@ img {
 }
 
 .headingcontainer {
-  background-color: #f60b33;
+  background-color: #050f46;
   position: fixed;
   width: 100%;
   top: 0;
@@ -67,7 +67,7 @@ li .active a {
 }
 
 nav ul {
-  background: #ff4545;
+  background: #050f46;
   position: absolute;
   padding: 2em 1.5em;
   left: 0;
@@ -75,8 +75,8 @@ nav ul {
   border-radius: 0 50px;
   -webkit-transition: all 3s;
   transition: all 3s;
-  -webkit-box-shadow: 2px 8px 18px 6px #c71b1b;
-          box-shadow: 2px 8px 18px 6px #c71b1b;
+  -webkit-box-shadow: 2px 8px 18px 6px #050f46;
+          box-shadow: 2px 8px 18px 6px #050f46;
 }
 
 header nav ul a {
@@ -150,7 +150,7 @@ header a img {
 
 .intropage {
   padding-top: 7em;
-  background-color: #f60b33;
+  background-color: #050f46;
   display: -ms-grid;
   display: grid;
   place-content: center;
