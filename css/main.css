@@ -414,8 +414,10 @@ section .sectiondesc {
     display: -ms-flexbox;
     display: flex;
     background: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
     position: relative;
-    padding: unset;
+    padding: 1em;
     left: 0;
     top: 0;
   }
@@ -500,7 +502,9 @@ section .sectiondesc {
     display: flex;
     background: unset;
     position: relative;
-    padding: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    padding: 1em;
     left: 0;
     top: 0;
   }
@@ -575,6 +579,18 @@ section .sectiondesc {
 }
 
 @media only screen and (min-width: 1050px) {
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: unset;
+    position: relative;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    padding: 1em;
+    left: 0;
+    top: 0;
+  }
   .intropage h1 {
     font-size: 3.5rem;
     padding: 0;
