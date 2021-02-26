@@ -60,15 +60,19 @@ li .active a {
 }
 
 nav ul {
-  background: #f60b33;
+  background: #ff4545;
   position: absolute;
   padding: 2em 1.5em;
   left: 0;
-  top: 92px;
+  top: 0;
+  border-radius: 0 50px;
+  transition: all 3s;
+  box-shadow: 2px 8px 18px 6px #c71b1b;
 }
 
 header nav ul a {
   display: block;
+  padding: 2em;
 }
 
 header a img {
@@ -79,6 +83,7 @@ header a img {
   width: 35px;
   cursor: pointer;
   display: block;
+  transition: all 3s;
 }
 
 .bar {
@@ -117,18 +122,26 @@ header a img {
   display: block;
   top: 0;
   height: 100%;
+  transition: all 3s;
   z-index: 2;
 }
 
+.logomain {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .intropage {
-  padding-top: 5em;
+  padding-top: 7em;
   background-color: #f60b33;
+  display: grid;
+  place-content: center;
 
   h1 {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    padding: 0 0.5em;
+    padding: 0 1em;
     overflow-wrap: break-word;
   }
   p {
@@ -149,6 +162,7 @@ header a img {
   .homebuttton {
     display: grid;
     place-content: center;
+    padding: 1em 0;
     .actionbutton {
       display: flex;
       justify-content: space-between;
@@ -169,7 +183,7 @@ header a img {
 
 .socialheaderlink {
   background: #cf0124;
-  margin: 2em 0;
+  margin-top: 1em;
   .socialgripview {
     display: grid;
     place-content: center;
@@ -292,7 +306,7 @@ section {
 
 .contactsection {
   padding: 4em 0;
-  background: #cf0124;
+  background: #f60b33;
 
   h1 {
     text-align: center;
@@ -324,11 +338,14 @@ section {
       display: flex;
       justify-content: space-between;
 
+      padding: 2em;
+
       button {
         margin: 0.2rem;
         padding: 1em 1.2em;
         border: none;
-        background: #cf0124;
+        width: 100%;
+        background: #f60b33;
         box-shadow: 1px 4px 6px 1px #ad0421;
         color: #f1d8ff;
       }
@@ -397,6 +414,14 @@ section {
     text-align: center;
   }
 
+  .buttoncoll {
+    padding: 2em;
+    button {
+      padding: 1.2em 3em !important;
+      width: 100% !important;
+    }
+  }
+
   .meettheteam {
     .teamlisting {
       display: grid;
@@ -422,6 +447,14 @@ section {
 
   nav {
     display: block;
+  }
+
+  .buttoncoll {
+    padding: 2em;
+    button {
+      padding: 1.2em 3em !important;
+      width: 100% !important;
+    }
   }
 
   header nav ul {
@@ -499,6 +532,14 @@ section {
     }
   }
 
+  .buttoncoll {
+    padding: 2em;
+    button {
+      padding: 1.2em 3em !important;
+      width: 100% !important;
+    }
+  }
+
   section {
     padding: 4em 0;
 
@@ -512,11 +553,15 @@ section {
   .intropage {
     h1 {
       font-size: 3.5rem;
+      padding: 0;
+      margin: 0;
     }
 
     p {
       font-size: unset;
       margin: 0 7em;
+      padding: 0;
+      margin: 0;
     }
     .companytitledesc {
       padding: 2em 4em;
@@ -524,6 +569,8 @@ section {
 
     h5 {
       font-size: 2rem;
+      padding: 0;
+      margin: 0;
     }
 
     .homebuttton {
